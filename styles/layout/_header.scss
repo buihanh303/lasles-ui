@@ -1,0 +1,23 @@
+.header {
+  @include flexBox(center, space-between);
+  padding-top: 5rem;
+  &-list {
+    @include flexBox();
+  }
+  &-item:not(:first-child) {
+    margin-left: 4rem;
+  }
+  &-item-link {
+    @include textStyle();
+  }
+  &-sign-in {
+    @include textStyle($title-color, 1.6rem, 500);
+    @include buttonStyle(0, white, white);
+  }
+  &-sign-up {
+    @include textStyle($primary-color, 1.6rem, 500);
+    @include buttonStyle(3rem, white);
+    padding: 1.3rem 4.5rem;
+    margin-left: 3rem;
+  }
+}
