@@ -1,0 +1,30 @@
+.banner {
+  @include flexBox(center);
+  margin-top: 8.8rem;
+  &-cotent {
+    margin-right: 4rem;
+  }
+  &-title {
+    @include textStyle($title-color, 5rem, 500);
+    line-height: 1.2;
+    margin-bottom: 5px;
+    & > strong {
+      font-weight: 700;
+    }
+  }
+  &-desc {
+    @include textStyle($text-color, 1.6rem);
+    line-height: 1.4;
+    & > strong {
+      font-weight: 500;
+    }
+  }
+  &-btn {
+    padding: 1.75rem 7.8rem;
+    margin-top: 5rem;
+    @include textStyle(white, 1.6rem, 700);
+    @include buttonStyle(1rem, $primary-color, white);
+    -webkit-box-shadow: 0px 30px 54px -8px rgb(245 56 56 / 35%);
+    box-shadow: 0px 30px 54px -8px rgb(245 56 56 / 35%);
+  }
+}

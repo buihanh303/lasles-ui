@@ -16,7 +16,7 @@
   }
   &-sign-up {
     @include textStyle($primary-color, 1.6rem, 500);
-    @include buttonStyle(3rem, white);
+    @include buttonStyle(5rem, white);
     padding: 1.3rem 4.5rem;
     margin-left: 3rem;
   }
