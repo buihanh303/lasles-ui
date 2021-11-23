@@ -1,0 +1,47 @@
+.customer {
+  &-list {
+    margin-top: 2.7rem;
+    @include flexBox();
+    overflow: hidden;
+    padding-bottom: 12rem;
+  }
+  &-item {
+    border: 2px solid $secondary-color;
+    border-radius: 1rem;
+    padding: 3rem;
+    min-width: 40rem;
+    background-color: white;
+  }
+  &-item:not(:first-child) {
+    margin-left: 2.5rem;
+  }
+  &-item-top {
+    @include flexBox(center);
+  }
+  &-img {
+    @include size(5rem);
+    flex-shrink: 0;
+    margin-right: 2rem;
+    border-radius: 50%;
+  }
+  &-item-title {
+    @include textStyle($title-color, 1.8rem, 500);
+    margin-bottom: 5px;
+  }
+  &-item-address {
+    @include textStyle($text-color, 1.4rem);
+  }
+  &-rate {
+    margin-left: auto;
+    @include flexBox(center);
+  }
+  &-number {
+    margin-right: 1rem;
+    @include textStyle($title-color);
+  }
+  &-desc {
+    @include textStyle($title-color);
+    line-height: 1.875;
+    margin-top: 8px;
+  }
+}
