@@ -1,11 +1,15 @@
 .network {
   padding-bottom: 5rem;
   &-img {
-    max-width: 106rem;
     margin: 13.1rem auto 6rem auto;
+    img {
+      width: 100%;
+    }
   }
   &-sponsore-img {
-    max-width: 113.6rem;
     margin: 0 auto;
+    img {
+      width: 100%;
+    }
   }
 }

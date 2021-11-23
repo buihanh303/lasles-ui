@@ -1,17 +1,23 @@
 .customer {
   padding-bottom: 18.1rem;
   &-list {
-    margin-top: 2.7rem;
-    @include flexBox();
-    overflow: hidden;
+    margin-top: 6rem;
+    // @include flexBox();
+    // overflow: hidden;
     padding-bottom: 12rem;
   }
   &-item {
     border: 2px solid $secondary-color;
     border-radius: 1rem;
     padding: 3rem;
-    min-width: 40rem;
     background-color: white;
+    transition: all 0.5s ease;
+    // min-width: 40rem;
+    &:hover {
+      border-color: $primary-color;
+      -webkit-box-shadow: 0px 42px 54px -8px #f1f1f2;
+      box-shadow: 0px 42px 54px -8px #f1f1f2;
+    }
   }
   &-item:not(:first-child) {
     margin-left: 2.5rem;
@@ -45,4 +51,57 @@
     line-height: 1.875;
     margin-top: 8px;
   }
+
+  .slick-track {
+    display: flex;
+    padding-bottom: 3rem;
+  }
+}
+
+.slick-dots {
+  display: flex !important;
+  margin-top: 5rem;
+}
+
+.slick-dots li button {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-color: $secondary-color;
+  @include size(1.5rem);
+  border-radius: 50%;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.slick-dots li:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.slick-dots li.slick-active button {
+  @include size(4.5rem, 1.5rem);
+  border-radius: 7px;
+  background-color: $primary-color;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  @include size(6rem);
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.slick-prev {
+  right: 9.5rem;
+}
+.slick-next {
+  right: 1.5rem;
 }

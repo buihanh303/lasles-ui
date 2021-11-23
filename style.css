@@ -186,7 +186,7 @@ button {
 }
 
 .bg-color {
-  background-color: #fbfbfb;
+  background-image: linear-gradient(#fbfbfb, white);
 }
 
 .ml-content {
@@ -529,33 +529,36 @@ button {
   padding-bottom: 5rem;
 }
 .network-img {
-  max-width: 106rem;
   margin: 13.1rem auto 6rem auto;
 }
+.network-img img {
+  width: 100%;
+}
 .network-sponsore-img {
-  max-width: 113.6rem;
   margin: 0 auto;
+}
+.network-sponsore-img img {
+  width: 100%;
 }
 
 .customer {
   padding-bottom: 18.1rem;
 }
 .customer-list {
-  margin-top: 2.7rem;
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  margin-top: 6rem;
   padding-bottom: 12rem;
 }
 .customer-item {
   border: 2px solid #dddddd;
   border-radius: 1rem;
   padding: 3rem;
-  min-width: 40rem;
   background-color: white;
+  transition: all 0.5s ease;
+}
+.customer-item:hover {
+  border-color: #f53838;
+  -webkit-box-shadow: 0px 42px 54px -8px #f1f1f2;
+  box-shadow: 0px 42px 54px -8px #f1f1f2;
 }
 .customer-item:not(:first-child) {
   margin-left: 2.5rem;
@@ -606,6 +609,62 @@ button {
   line-height: 1.875;
   margin-top: 8px;
 }
+.customer .slick-track {
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.slick-dots {
+  display: flex !important;
+  margin-top: 5rem;
+}
+
+.slick-dots li button {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-color: #dddddd;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.slick-dots li:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.slick-dots li.slick-active button {
+  width: 4.5rem;
+  height: 1.5rem;
+  border-radius: 7px;
+  background-color: #f53838;
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 6rem;
+  height: 6rem;
+  color: #f53838;
+  border: 1px solid #f53838;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: all 0.3s linear;
+}
+.slick-arrow:hover {
+  background-color: #f53838;
+  color: white;
+}
+
+.slick-prev {
+  right: 9.5rem;
+}
+
+.slick-next {
+  right: 1.5rem;
+}
 
 .footer {
   background-color: #f8f8f8;
@@ -629,6 +688,7 @@ button {
   box-shadow: 0px 75px 54px -8px #f1f1f2;
   z-index: 3;
   border-radius: 1rem;
+  max-width: 100%;
 }
 .footer-sub-left {
   max-width: 41rem;
