@@ -1,0 +1,91 @@
+.footer {
+  background-color: #f8f8f8;
+  position: relative;
+  padding-bottom: 10rem;
+  &-sub {
+    position: absolute;
+    @include flexBox(center, space-between);
+    padding: 5.8rem 7rem;
+    background-color: white;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    -webkit-box-shadow: 0px 75px 54px -8px #f1f1f2;
+    box-shadow: 0px 75px 54px -8px #f1f1f2;
+    z-index: 3;
+    border-radius: 1rem;
+  }
+  &-sub-left {
+    max-width: 41rem;
+  }
+  &-sub-title {
+    @include textStyle($title-color, 3.5rem, 500);
+    line-height: 1.3;
+    max-width: 37.1rem;
+  }
+  &-sub-desc {
+    @include textStyle();
+    margin-top: 2rem;
+  }
+  &-sub-btn {
+    padding: 1.75rem 6.5rem;
+    @include textStyle(white, 1.6rem, 700);
+    @include buttonStyle(1rem, $primary-color, white);
+    -webkit-box-shadow: 0px 30px 54px -8px rgb(245 56 56 / 35%);
+    box-shadow: 0px 30px 54px -8px rgb(245 56 56 / 35%);
+  }
+  &-content {
+    padding-top: 18.1rem;
+  }
+  &-desc {
+    @include textStyle($text-color);
+    line-height: 1.875;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    max-width: 34rem;
+    strong {
+      font-weight: 500;
+    }
+  }
+  &-social {
+    @include flexBox();
+  }
+  &-social-link {
+    img {
+      background-color: $primary-color;
+      border-radius: 50%;
+    }
+  }
+  &-social-link:nth-child(2) {
+    margin: 0 2rem;
+  }
+  &-copy {
+    margin-top: 3rem;
+    @include textStyle(#afb5c0);
+    strong {
+      font-weight: 500;
+    }
+  }
+  &-title {
+    @include textStyle($title-color, 1.8rem, 500);
+    line-height: 1.66;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+  }
+  &-link {
+    @include textStyle();
+    line-height: 1.875;
+    text-transform: capitalize;
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  &-content,
+  &-info:nth-child(2) {
+    @include flexBox(stretch, space-between);
+  }
+  &-info {
+    width: 50%;
+  }
+}
