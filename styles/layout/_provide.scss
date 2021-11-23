@@ -2,7 +2,7 @@
   margin-top: 9.5rem;
   padding-bottom: 13.1rem;
   background-color: white;
-  @include flexBox(flex-end, space-around);
+  @include flexBox(flex-end, center);
   &-img {
     max-width: 50.8rem;
   }

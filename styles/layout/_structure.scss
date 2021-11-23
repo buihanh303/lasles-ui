@@ -5,10 +5,15 @@
 .container {
   max-width: $container;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .bg-color {
-  background-color: #fbfbfb;
+  background-color: rgb(128 128 128 / 6%);
+}
+
+.ml-content {
+  margin-left: 15rem;
 }
 
 .block-box {

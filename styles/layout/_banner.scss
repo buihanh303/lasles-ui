@@ -1,8 +1,11 @@
 .banner {
   @include flexBox(center);
   margin-top: 8.8rem;
-  &-cotent {
+  &-content {
     margin-right: 4rem;
+  }
+  &-img {
+    max-width: 59rem;
   }
   &-title {
     @include textStyle($title-color, 5rem, 500);
