@@ -390,6 +390,7 @@ button {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
+  line-height: 2.14;
 }
 .provide-item:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -413,6 +414,109 @@ button {
 .plan {
   padding-top: 8rem;
   padding-bottom: 15rem;
+}
+.plan-list {
+  margin-top: 6.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 109.2rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.plan-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.plan-img {
+  width: 14.4rem;
+}
+.plan-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding: 7.9rem 0 5rem;
+  min-height: 76rem;
+  border: 2px solid #dddddd;
+  border-radius: 1rem;
+  background-color: white;
+  width: 30%;
+  transition: all 0.5s ease;
+}
+.plan-item:hover {
+  border-color: #f53838;
+}
+.plan-item:not(:first-child) {
+  margin-left: 5rem;
+}
+.plan-title {
+  color: #0b132a;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.66;
+  margin: 3rem 0;
+  text-transform: capitalize;
+}
+.plan-options-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.plan-options-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.plan-options-desc {
+  color: #4f5665;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.14;
+  margin-left: 2rem;
+  text-transform: capitalize;
+}
+.plan-options-img {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-shrink: 0;
+}
+.plan-price {
+  color: #0b132a;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.plan-price span {
+  font-weight: 400;
+  color: #4f5665;
+}
+.plan-btn {
+  border-radius: 5rem;
+  background-color: white;
+  border: 1px solid #f53838;
+  border-width: 2px;
+  color: #f53838;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.185;
+  text-transform: capitalize;
+  padding: 1.3rem 6.2rem;
+  transition: all 0.25s linear;
+}
+.plan-btn:hover {
+  background-color: #f53838;
+  color: white;
+  -webkit-box-shadow: 0px 22px 54px -14px rgba(245, 56, 56, 0.35);
+  box-shadow: 0px 22px 54px -14px rgba(245, 56, 56, 0.35);
 }
 
 /*# sourceMappingURL=style.css.map */
