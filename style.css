@@ -202,14 +202,20 @@ button {
   font-size: 3.5rem;
   font-weight: 500;
   text-align: center;
+  max-width: 38.3rem;
+  margin: 0 auto;
+  line-height: 1.43;
 }
 .block-box-desc {
   color: #4f5665;
   font-size: 1.6rem;
   font-weight: 400;
   text-align: center;
-  line-height: 1.7;
+  line-height: 1.875;
   margin-top: 2rem;
+}
+.block-box-desc strong {
+  font-weight: 500;
 }
 
 .header {
@@ -517,6 +523,18 @@ button {
   color: white;
   -webkit-box-shadow: 0px 22px 54px -14px rgba(245, 56, 56, 0.35);
   box-shadow: 0px 22px 54px -14px rgba(245, 56, 56, 0.35);
+}
+
+.network {
+  margin-bottom: 5rem;
+}
+.network-img {
+  max-width: 106rem;
+  margin: 13.1rem auto 6rem auto;
+}
+.network-sponsore-img {
+  max-width: 113.6rem;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
