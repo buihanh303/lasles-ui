@@ -8,6 +8,13 @@
   padding: 0 1.5rem;
 }
 
+.btn-primary-hover {
+  transition: all 0.3s linear;
+  &:hover {
+    transform: translateY(-1rem);
+  }
+}
+
 .bg-color {
   background-image: linear-gradient(#fbfbfb, white);
 }

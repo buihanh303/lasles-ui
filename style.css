@@ -185,6 +185,13 @@ button {
   padding: 0 1.5rem;
 }
 
+.btn-primary-hover {
+  transition: all 0.3s linear;
+}
+.btn-primary-hover:hover {
+  transform: translateY(-1rem);
+}
+
 .bg-color {
   background-image: linear-gradient(#fbfbfb, white);
 }
