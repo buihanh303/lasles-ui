@@ -11,3 +11,16 @@ $(document).ready(function () {
       "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
   });
 });
+
+const btnToggleMenu = document.querySelector(".header-toggle");
+const headerList = document.querySelector(".header-list");
+const isExpand = "is-expand";
+btnToggleMenu.addEventListener("click", () => {
+  headerList.classList.add(isExpand);
+});
+
+window.addEventListener("click", (e) => {
+  if (!headerList.contains(e.target) && !e.target.matches(".header-toggle")) {
+    headerList.classList.remove(isExpand);
+  }
+});

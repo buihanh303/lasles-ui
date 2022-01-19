@@ -20,4 +20,52 @@
     padding: 1.3rem 4.5rem;
     margin-left: 3rem;
   }
+  &-toggle {
+    display: none;
+  }
+  &-sign {
+    @include flexBox(center);
+  }
+  @include maxWidth(1023px) {
+    padding-top: 2rem;
+    &-toggle {
+      display: block;
+      font-size: 2.5rem;
+      margin-left: 2rem;
+    }
+    &-sign-up {
+      padding: 1rem 2rem;
+      margin-left: 2rem;
+    }
+    &-list {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      bottom: 0;
+      width: 70%;
+      flex-direction: column;
+      background-color: #f3f3f3;
+      padding: 3rem;
+      transition: all 0.5s ease;
+    }
+    &-list.is-expand {
+      right: 0;
+    }
+    &-item:not(:first-child) {
+      margin: 3rem 0 0;
+    }
+  }
+  @include maxWidth(767px) {
+    &-logo {
+      max-width: 11rem;
+    }
+    &-sign-in,
+    &-sign-up {
+      font-size: 1.3rem;
+    }
+    &-sign-up {
+      padding: 0.7rem 1.5rem;
+      margin-left: 1rem;
+    }
+  }
 }

@@ -28,4 +28,21 @@
     @include textStyle($text-color, 2rem);
     text-transform: capitalize;
   }
+  @include maxWidth(1023px) {
+    margin-top: 6rem;
+  }
+  @include maxWidth(767px) {
+    margin-top: 4rem;
+    &-list {
+      flex-direction: column;
+    }
+    &-item {
+      width: 100%;
+      justify-content: flex-start;
+      padding-left: 30%;
+    }
+    &-item:nth-child(2) {
+      border: unset;
+    }
+  }
 }
