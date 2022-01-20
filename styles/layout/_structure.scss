@@ -42,4 +42,12 @@
       font-weight: 500;
     }
   }
+  @include maxWidth(767px) {
+    &-desc {
+      padding: 0 1.5rem;
+    }
+    &-title {
+      font-size: 3rem;
+    }
+  }
 }

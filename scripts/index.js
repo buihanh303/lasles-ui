@@ -9,6 +9,28 @@ $(document).ready(function () {
       "<button type='button' class='slick-prev pull-left'><i class='fas fa-arrow-left' aria-hidden='true'></i></button>",
     nextArrow:
       "<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
   });
 });
 

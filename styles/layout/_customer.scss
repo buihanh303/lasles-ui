@@ -105,3 +105,18 @@
 .slick-next {
   right: 1.5rem;
 }
+
+@include maxWidth(1023px) {
+  .customer {
+    padding-bottom: 2rem;
+  }
+  .slick-dots {
+    margin: 0;
+  }
+}
+
+@include maxWidth(767px) {
+  .customer {
+    // padding-bottom: 5rem;
+  }
+}
